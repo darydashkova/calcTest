@@ -76,13 +76,12 @@ window.onload = function () {
         console.log(Number.isInteger(summ))
         if (!Number.isInteger(summ)) {
             summ = summ.toFixed(5)
-            console.log(summ)
+
         }
         if (copyArrInput.length > 1) {
             let splitDouble = '';
             if(summ.toString().includes('.')){
                 splitDouble =    summ.toString().split('.')
-console.log(splitDouble)
                 history.innerHTML += '<div>' + copyInput + ' ' + '=' + ' ' + splitDouble[0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + '.' + splitDouble[1]+'</div>'
                 input.innerHTML = splitDouble[0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + '.' + splitDouble[1]
             }  

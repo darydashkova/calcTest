@@ -17,13 +17,13 @@ main{
 }
 .calc{
     width: 100%;
-    display: grid;
-    justify-items: center;
-    grid-auto-flow: column;
+    display: flex;
+    /* justify-items: center;
+    grid-auto-flow: column; */
     justify-content: center;
 }
 .cacl__history{
-    width: 100%;
+    width: 50%;
 }
 .calc__history-title{
     font-weight: 500;
@@ -37,6 +37,10 @@ main{
 }
 .calc_operation{
     margin-right: 55px;
+    width: 50%;
+    display: grid;
+    justify-content: flex-end;
+
 }
 .calc__calculation{
     max-height: 36px;
